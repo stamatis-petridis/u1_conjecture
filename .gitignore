@@ -1,2 +1,5 @@
 # OTS backups
 *.ots.bak
+
+# temporary files
+temp/
