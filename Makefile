@@ -6,7 +6,9 @@ TEXFILE := main.tex
 all: pdf
 
 pdf:
+	mkdir -p build
 	$(LATEXMK) -pdf -interaction=nonstopmode $(TEXFILE)
 
 clean:
 	$(LATEXMK) -C $(TEXFILE)
+	rm -rf build
