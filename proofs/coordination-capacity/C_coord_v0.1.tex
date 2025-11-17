@@ -1,0 +1,53 @@
+\section{Coordination Capacity (Proposed Definition)}
+
+\begin{definition}[Coordination Capacity]
+Let $\Theta_t$ denote the true economic preferences and claims of agents at time $t$, 
+and let $A_t$ denote the publicly settled ledger state produced by protocol $\Pi$.
+
+The \emph{coordination capacity} is defined as:
+\[
+C_{\mathrm{coord}}
+=
+\sup_{\Pi}
+\lim_{T\to\infty}
+\frac{1}{T}\, I(\Theta_{0:T}; A_{0:T}),
+\]
+taken over all protocols $\Pi$ satisfying:
+(i) public verifiability,
+(ii) open participation,
+(iii) bounded adversary resources,
+(iv) physically irreversible settlement cost.
+\end{definition}
+
+\begin{definition}[Security Exponent]
+For systems exhibiting exponential finality, the reliability of settlement is governed by the exponent
+\[
+\beta \approx \frac{\dot{E}_{\mathrm{honest}}}{V_{\mathrm{secured}}},
+\]
+where $\dot{E}_{\mathrm{honest}}$ is the honest irreversible work rate and 
+$V_{\mathrm{secured}}$ is the total economic value dependent on $\Pi$ for settlement.
+\end{definition}
+
+\section{Conjecture: U₁ as a Capacity-Achieving Protocol}
+
+\begin{conjecture}[U₁ Coordination Capacity Conjecture]
+A protocol $\Pi$ achieves non-zero coordination capacity 
+($C_{\mathrm{coord}} > 0$) 
+if and only if it satisfies the U₁ axioms:
+A₁ (energy-bounded issuance), 
+A₂ (public verifiability), 
+A₃ (probabilistic finality), 
+A₄ (monetary closure).
+
+Furthermore, for adversary fraction $q < p$,
+protocols satisfying A₁–A₄ exhibit exponential corruption suppression:
+\[
+\Pr(\text{reorg depth} \ge k)
+\approx
+\left(\frac{q}{p}\right)^k
+=
+\exp(-\beta k),
+\]
+and can achieve $\beta$ arbitrarily close to the physical limit imposed by
+$\dot{E}_{\mathrm{honest}}/V_{\mathrm{secured}}$.
+\end{conjecture}
