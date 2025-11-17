@@ -2,7 +2,7 @@
 
 This section formalizes the notion of \emph{coordination capacity} for open,
 adversarial monetary systems, isolates irreversibility as the primitive
-resource, and states the U₁ Coordination Capacity Conjecture.
+resource, and states the $U_1$ Coordination Capacity Conjecture.
 
 
 \subsection{Irreversibility as the Primitive}
@@ -56,7 +56,7 @@ An \emph{atomic unit of account} $U$ is the smallest denomination such that:
 \begin{remark}
 In Bitcoin, the atomic unit is $U = 1$ satoshi and $S_{\max} = 21 \times
 10^6 \text{ BTC} = 2.1 \times 10^{15}$ satoshis. For any protocol
-satisfying A₄ (Monetary Closure), an analogous $U$ exists.
+satisfying $A_4$ (Monetary Closure), an analogous $U$ exists.
 \end{remark}
 
 
@@ -96,10 +96,10 @@ unit time.
 Let $\mathcal{M}_{\phys}$ denote the class of physics-anchored protocols
 satisfying:
 \begin{enumerate}
-  \item public verifiability (A₂),
+  \item public verifiability ($A_2$),
   \item open participation (permissionless entry and exit),
   \item bounded adversary resources (e.g.\ an honest-majority work budget),
-  \item physically irreversible settlement cost (A₁).
+  \item physically irreversible settlement cost ($A_1$).
 \end{enumerate}
 
 The \emph{coordination capacity} of the environment is
@@ -129,7 +129,7 @@ performed by honest participants.
 
 \begin{definition}[Security Exponent]
 Consider a physics-anchored protocol $\Pi$ exhibiting probabilistic
-finality (A₃). For a reorganization depth parameter $k \in \mathbb{N}$,
+finality ($A_3$). For a reorganization depth parameter $k \in \mathbb{N}$,
 let
 \[
 P_{\reorg}(k) = \Pr(\text{ledger reorganization of depth} \ge k).
@@ -171,8 +171,8 @@ meaningful barrier against adversarial rewriting of history in an
 open, permissionless setting.
 \end{remark}
 
-In PoW-style U₁ systems, empirical and theoretical arguments suggest
-that, under competitive mining and difficulty adjustment (T₁, T₂),
+In PoW-style $U_1$ systems, empirical and theoretical arguments suggest
+that, under competitive mining and difficulty adjustment ($T_1$, $T_2$),
 there exists a protocol-dependent constant $c > 0$ such that
 \[
 \beta(\Pi) \approx c \cdot
@@ -192,7 +192,7 @@ The above definitions explicitly restrict attention to
 \emph{physics-anchored} protocols in $\mathcal{M}_{\phys}$.
 
 \begin{definition}[Institution-Anchored Ledger]
-A ledger $\Pi_{\inst}$ is \emph{institution-anchored} if irreversibility
+A ledger $\Pi_{\mathrm{inst}}$ is \emph{institution-anchored} if irreversibility
 of entries is enforced primarily by:
 \begin{enumerate}
   \item legal decree or administrative authority,
@@ -205,7 +205,7 @@ rather than by publicly verifiable irreversible work steps.
 Fiat currencies, bank databases, and permissioned ledgers typically
 fall into this class: they may exhibit practical irreversibility within
 a jurisdiction, but it is not rooted in physics and is not
-permissionless or globally auditable in the sense of A₁–A₄.
+permissionless or globally auditable in the sense of $A_1$–$A_4$.
 
 \begin{remark}
 Coordination capacity $C_{\coord}$ is defined only over
@@ -217,11 +217,11 @@ arrangements.
 \end{remark}
 
 
-\subsection{U₁ Coordination Capacity Conjecture}
+\subsection{\texorpdfstring{$U_1$ Coordination Capacity Conjecture}{U1 Coordination Capacity Conjecture}}
 
 We can now restate the core conjecture in this refined language.
 
-\begin{conjecture}[U₁ Coordination Capacity Conjecture]
+\begin{conjecture}[$U_1$ Coordination Capacity Conjecture]
 Consider the class $\mathcal{M}_{\phys}$ of physics-anchored protocols
 operating in an open, permissionless, adversarial environment with a
 bounded-work attacker (honest-majority assumption).
@@ -230,11 +230,11 @@ Then:
 \begin{enumerate}
   \item A protocol $\Pi \in \mathcal{M}_{\phys}$ achieves strictly
         positive coordination capacity ($\dot V_{\coord}(\Pi) > 0$)
-        if and only if it satisfies the U₁ axioms:
-        A₁ (energy-bounded issuance),
-        A₂ (public verifiability),
-        A₃ (probabilistic finality),
-        A₄ (monetary closure).
+        if and only if it satisfies the $U_1$ axioms:
+        $A_1$ (energy-bounded issuance),
+        $A_2$ (public verifiability),
+        $A_3$ (probabilistic finality),
+        $A_4$ (monetary closure).
 
   \item For any such $\Pi$ with adversary work fraction $q < p$
         (honest fraction $p$), there exists $\beta(\Pi) > 0$ such that
@@ -248,7 +248,7 @@ Then:
         \quad \text{for all sufficiently large } k.
         \]
 
-  \item Among protocols satisfying A₁–A₄, U₁-style PoW monetary systems
+  \item Among protocols satisfying $A_1$–$A_4$, $U_1$-style PoW monetary systems
         can achieve security exponents $\beta(\Pi)$ arbitrarily close
         to the physical limit imposed by their irreversibility density:
         \[
@@ -275,7 +275,7 @@ is not backed by a nontrivial amount of irreversible work cannot
 achieve nonzero coordination capacity in the limit.
 \end{corollary}
 
-The conjecture thus states that U₁ systems are to economic coordination
+The conjecture thus states that $U_1$ systems are to economic coordination
 what Shannon-capacity-achieving codes are to communication: they
 saturate a physically imposed limit on reliable performance in a noisy,
 adversarial universe.

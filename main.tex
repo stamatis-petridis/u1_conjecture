@@ -1,12 +1,26 @@
 \documentclass{article}
 
-\usepackage{amsmath, amssymb, amsthm}
+\usepackage{amsmath,amssymb,amsthm}
 \usepackage{hyperref}
 
-\newtheorem{definition}{Definition}
+\newcommand{\coord}{\mathrm{coord}}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\irr}{\mathrm{irr}}
+\newcommand{\reorg}{\mathrm{reorg}}
+\newcommand{\honest}{\mathrm{honest}}
+\newcommand{\secured}{\mathrm{secured}}
+
+\theoremstyle{plain}
 \newtheorem{theorem}{Theorem}
-\newtheorem{axiom}{Axiom}
-\newtheorem{conjecture}{Conjecture}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
 
 \begin{document}
 
