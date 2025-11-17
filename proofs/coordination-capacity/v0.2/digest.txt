@@ -1,0 +1,1 @@
+d4dd788d24ce4c22c7813e2baf858d95e96cde4b3841475c0da41a3b826e90e6  proofs/coordination-capacity/v0.2/C_coord_v0.2.tex
