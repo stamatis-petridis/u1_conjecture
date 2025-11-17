@@ -1,0 +1,8 @@
+chain=bitcoin-mainnet
+block_height=924010
+block_hash=0000000000000000000156adc4d33594834729d7a7697231c43fea3461940429
+anchor_time_utc=2025-11-17T09:26:54Z
+ots_state=complete
+ots_file=digest.txt.ots
+calendars=https://alice.btc.calendar.opentimestamps.org,https://bob.btc.calendar.opentimestamps.org,https://btc.calendar.catallaxy.com,https://finney.calendar.eternitywall.com
+digest_sha256=2eccf5ac1df5e4710487d439d363014021ae28bd8670b4f02474751448e963c4
