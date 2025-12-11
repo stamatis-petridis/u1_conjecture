@@ -1,0 +1,1 @@
+29b26a881e76e9192aca9774ddc76d8f0ea8ee621c741758acb268fd2c71d7aa  proofs/coordination-capacity/v0.3/C_coord_v0.3.tex
