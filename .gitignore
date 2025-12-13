@@ -9,4 +9,5 @@ archive_adrs/
 .vscode/
 
 # LaTeX build artifacts
-build/
+build/**
+!build/main.pdf
