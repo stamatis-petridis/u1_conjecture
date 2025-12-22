@@ -11,3 +11,13 @@ archive_adrs/
 # LaTeX build artifacts
 build/**
 !build/main.pdf
+
+# Reports folder (analysis and exploration)
+reports/
+
+# agents
+.codex/
+.claude/
+
+# data files
+data/
