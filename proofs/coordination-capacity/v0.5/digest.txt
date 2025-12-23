@@ -1,0 +1,5 @@
+5ca717a0acd86e5df643f21aa737796cdc7f129d5430ebc06f1d763538c17c00  ../../../main.tex
+729a78dd24272eae44780a4fe322c9cf88bb2e4301528bf0d5532dd3c829f48b  ../../../sections/02_model.tex
+3fa6667507661d6ce7b0753d54cbde7bfa4459ee35953e9d9a5ee43364ad17a1  ../../../sections/03_axioms.tex
+914fb5d44dad8aa40945b2edb031830191bf32041137931baa73e7ad45b505fa  ../../../sections/04_coordination_capacity.tex
+1d32c1a449066f8f5e0c988743f7c2bba8f46f08f1fc0660ddbcbe69e11db11f  ../../../build/main.pdf
