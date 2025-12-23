@@ -50,7 +50,7 @@ where $\mathrm{TransitionLaw}_t$ represents the system’s state-transition law 
 The \emph{coordination capacity ratio} of system $S$ at time $t$ and
 horizon $\tau$ is
 \[
-\kappa_S(t, \tau)
+\Ainv_S(t, \tau)
 =
 \frac{\mathcal{S}_S(t)}{\mathcal{H}_S(t, \tau)},
 \]
@@ -62,7 +62,7 @@ Intuitively, $\mathcal{S}_S$ measures how much irreversible commitment
 has been sunk into the observed past of the system, while
 $\mathcal{H}_S$ measures how uncertain its future remains, even
 conditioning on all available knowledge and rules. The ratio
-$\kappa_S$ quantifies how much \emph{anchored history} the system
+$\Ainv_S$ quantifies how much \emph{anchored history} the system
 enjoys per bit of unresolved future.
 
 \begin{definition}[Persistence Functional]
@@ -70,13 +70,13 @@ The \emph{persistence functional} of $S$ at horizon $\tau$ is
 \[
 \mathcal{P}_S(\tau)
 =
-\liminf_{t \to \infty} \kappa_S(t, \tau)
+\liminf_{t \to \infty} \Ainv_S(t, \tau)
 =
 \liminf_{t \to \infty}
 \frac{\mathcal{S}_S(t)}{\mathcal{H}_S(t, \tau)}.
 \]
 When the limit exists, we simply write
-$\mathcal{P}_S(\tau) = \lim_{t \to \infty} \kappa_S(t, \tau)$.
+$\mathcal{P}_S(\tau) = \lim_{t \to \infty} \Ainv_S(t, \tau)$.
 \end{definition}
 
 \noindent
@@ -106,20 +106,20 @@ following holds:
     > \frac{1}{2}.
     \]
 
-  \item \textbf{Gradient ascent on $\kappa$.}
+  \item \textbf{Gradient ascent on $\Ainv$.}
     Any adaptive system that can locally reconfigure its dynamics at
     cost $\Delta \mathcal{S}_S > 0$ will, in expectation, only accept
     modifications that satisfy
     \[
     \mathbb{E}\!\left[
-      \Delta \kappa_S
+      \Delta \Ainv_S
       \,\middle|\,
       \text{update accepted}
     \right]
     \ge 0.
     \]
     In other words, viable systems perform stochastic gradient ascent
-    on $\kappa_S$ over evolutionary time.
+    on $\Ainv_S$ over evolutionary time.
 
   \item \textbf{Singularity regime.}
     If a subsystem $S_\star$ achieves
@@ -128,11 +128,11 @@ following holds:
     \quad
     \mathcal{H}_{S_\star}(t,\tau) \to 0^+,
     \quad
-    \frac{d}{dt}\kappa_{S_\star}(t,\tau) > 0
+    \frac{d}{dt}\Ainv_{S_\star}(t,\tau) > 0
     \quad
     \text{for all sufficiently large } t,
     \]
-    then $\kappa_{S_\star}(t,\tau) \to \infty$ and the subsystem
+    then $\Ainv_{S_\star}(t,\tau) \to \infty$ and the subsystem
     behaves as a \emph{persistence singularity}: it becomes an
     effectively permanent attractor for resources and coordination
     flows in its environment.
@@ -142,13 +142,13 @@ following holds:
 \begin{remark}[Interpretation]
 The law states that, all else equal, systems with higher
 persistence functional $\mathcal{P}_S$ are more likely to survive and
-dominate. The universe selects for high $\kappa$: structures that
+dominate. The universe selects for high $\Ainv$: structures that
 convert irreversible work into predictable, low entropy futures out
 compete those that burn energy without reducing uncertainty.
 
 The singularity clause identifies a special regime where a system
 pushes $\mathcal{S} \to \infty$ while simultaneously driving
-$\mathcal{H} \to 0$. In this regime, $\kappa$ is unbounded and the
+$\mathcal{H} \to 0$. In this regime, $\Ainv$ is unbounded and the
 system behaves as a one way sink in the space of coordination: once
 resources or agents fall into its basin of attraction, there is no
 thermodynamically efficient path back out.
@@ -156,7 +156,7 @@ thermodynamically efficient path back out.
 
 \begin{remark}[Monetary and Cosmological Examples]
 Black holes, biological life, and certain monetary protocols can be
-viewed as candidates for high $\kappa$ structures:
+viewed as candidates for high $\Ainv$ structures:
 
 \begin{itemize}
   \item Black holes accumulate enormous $\mathcal{S}$ (Bekenstein
@@ -164,7 +164,7 @@ viewed as candidates for high $\kappa$ structures:
         accessible from their horizon.
   \item Biological lineages expend energy to reduce uncertainty about
         their environment (information gathering, learning, memory),
-        thereby increasing $\kappa$ generation by generation.
+        thereby increasing $\Ainv$ generation by generation.
   \item A fully ossified, physics anchored monetary protocol with
         fixed supply and cumulative proof of work can drive
         $\mathcal{S} \to \infty$ and $\mathcal{H} \to 0$ on monetary
@@ -177,4 +177,4 @@ Fundamental Law of Persistence: among all physically realizable
 monetary systems, those that satisfy the $U_1$ axioms are precisely
 the candidates that can drive $\mathcal{S}$ unbounded while forcing
 $\mathcal{H}$ toward zero, and thus push their coordination capacity
-ratio $\kappa$ into the singular regime.
+ratio $\Ainv$ into the singular regime.

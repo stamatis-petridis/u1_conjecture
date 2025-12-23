@@ -373,11 +373,11 @@ with low $\mathcal{H}$ (reversible but predictable), etc.
 \subsubsection{The Coordination Capacity Ratio}
 
 \begin{definition}[Coordination Capacity Ratio]
-\label{def:kappa}
+\label{def:Ainv}
 The \emph{coordination capacity ratio} of protocol $\Pi$ is
 \[
 \boxed{
-\kappa_\Pi
+\Ainv_\Pi
 \;\equiv\;
 \frac{\mathcal{S}_\Pi}{\mathcal{H}_\Pi}
 }
@@ -386,18 +386,18 @@ with units: $\mathrm{bits} / \mathrm{bits} = \text{dimensionless}$.
 \end{definition}
 
 \begin{interpretation}
-$\kappa_\Pi$ measures the ratio of thermodynamic commitment (secured
+$\Ainv_\Pi$ measures the ratio of thermodynamic commitment (secured
 past) to monetary uncertainty (unknown future):
 \[
-\kappa = \frac{\text{Irreversibility}}{\text{Uncertainty}}
+\Ainv = \frac{\text{Irreversibility}}{\text{Uncertainty}}
        = \frac{\text{What cannot be undone}}{\text{What cannot be known}}.
 \]
-High $\kappa$ indicates a system with strong irreversibility and high
+High $\Ainv$ indicates a system with strong irreversibility and high
 predictability---the optimal configuration for coordination.
 \end{interpretation}
 
 \begin{remark}[Analogy to Fundamental Dimensionless Ratios]
-The ratio $\kappa = \mathcal{S}/\mathcal{H}$ is structurally analogous
+The ratio $\Ainv = \mathcal{S}/\mathcal{H}$ is structurally analogous
 to other fundamental dimensionless quantities in physics:
 \begin{center}
 \begin{tabular}{lll}
@@ -406,30 +406,30 @@ to other fundamental dimensionless quantities in physics:
 Reynolds number & $Re = \rho v L / \mu$ & Inertia vs.\ viscosity \\
 Signal-to-noise & $\mathrm{SNR} = P_s / P_n$ & Signal vs.\ noise \\
 Carnot efficiency & $\eta = 1 - T_C/T_H$ & Cold vs.\ hot reservoir \\
-\textbf{Coordination capacity} & $\kappa = \mathcal{S}/\mathcal{H}$ &
+\textbf{Coordination capacity} & $\Ainv = \mathcal{S}/\mathcal{H}$ &
   \textbf{Irreversibility vs.\ uncertainty}
 \end{tabular}
 \end{center}
 \end{remark}
 
 
-\subsubsection{Properties of $\kappa$}
+\subsubsection{Properties of \texorpdfstring{$\Ainv$}{A-inv}}
 
 \begin{proposition}[Boundary Behavior]
-\label{prop:kappa-bounds}
+\label{prop:Ainv-bounds}
 For any physics-anchored protocol $\Pi$:
 \begin{enumerate}
   \item If $\mathcal{S}_\Pi \to \infty$ and $\mathcal{H}_\Pi \to 0^+$,
-        then $\kappa_\Pi \to \infty$.
+        then $\Ainv_\Pi \to \infty$.
   \item If $\mathcal{S}_\Pi \to 0$ (no thermodynamic anchoring),
-        then $\kappa_\Pi \to 0$ regardless of $\mathcal{H}_\Pi$.
+        then $\Ainv_\Pi \to 0$ regardless of $\mathcal{H}_\Pi$.
   \item If $\mathcal{H}_\Pi \to \infty$ (unbounded policy uncertainty),
-        then $\kappa_\Pi \to 0$ regardless of $\mathcal{S}_\Pi$.
+        then $\Ainv_\Pi \to 0$ regardless of $\mathcal{S}_\Pi$.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
-Direct from the definition $\kappa = \mathcal{S}/\mathcal{H}$ and
+Direct from the definition $\Ainv = \mathcal{S}/\mathcal{H}$ and
 properties of limits.
 \end{proof}
 
@@ -438,7 +438,7 @@ Maximum coordination capacity is achieved in the regime:
 \[
 \mathcal{S} \to \infty, \quad \mathcal{H} \to 0
 \quad \Longrightarrow \quad
-\kappa \to \infty.
+\Ainv \to \infty.
 \]
 This corresponds to a protocol with maximal thermodynamic security
 and minimal monetary uncertainty.
@@ -450,14 +450,14 @@ and minimal monetary uncertainty.
 \begin{conjecture}[Capital Flow Gradient]
 \label{conj:capital-flow}
 Let $\Pi_A$ and $\Pi_B$ be competing monetary protocols with
-coordination capacity ratios $\kappa_A$ and $\kappa_B$ respectively.
+coordination capacity ratios $\Ainv_A$ and $\Ainv_B$ respectively.
 
-If $\kappa_B > \kappa_A$, then in the long run, capital flows from
+If $\Ainv_B > \Ainv_A$, then in the long run, capital flows from
 $\Pi_A$ to $\Pi_B$ at a rate proportional to the gradient:
 \[
 \dot{K}_{A \to B}
 \;\propto\;
-(\kappa_B - \kappa_A) \cdot K_A,
+(\Ainv_B - \Ainv_A) \cdot K_A,
 \]
 where $K_A$ is capital denominated in system $A$.
 \end{conjecture}
@@ -470,7 +470,7 @@ in entropy space, analogous to:
   \item mass flow down gravitational potentials (mechanics),
   \item current flow down voltage differentials (electromagnetism).
 \end{itemize}
-The coordination capacity differential $\Delta\kappa = \kappa_B - \kappa_A$
+The coordination capacity differential $\Delta\Ainv = \Ainv_B - \Ainv_A$
 acts as the ``potential gradient'' driving capital migration.
 \end{remark}
 
@@ -480,7 +480,7 @@ acts as the ``potential gradient'' driving capital migration.
 We now apply the framework to three monetary systems.
 
 \begin{example}[Bitcoin]
-\label{ex:kappa-btc}
+\label{ex:Ainv-btc}
 For Bitcoin as of 2025:
 \begin{itemize}
   \item Cumulative PoW energy:
@@ -496,12 +496,12 @@ For Bitcoin as of 2025:
         (deterministic halving schedule, protocol ossification,
         Schelling point against rule changes).
   \item Coordination capacity ratio:
-        $\kappa_{\mathrm{BTC}} \approx 10^{39}$.
+        $\Ainv_{\mathrm{BTC}} \approx 10^{39}$.
 \end{itemize}
 \end{example}
 
 \begin{example}[Gold]
-\label{ex:kappa-gold}
+\label{ex:Ainv-gold}
 For gold as a monetary system:
 \begin{itemize}
   \item Physical extraction energy provides atomic verification
@@ -515,12 +515,12 @@ For gold as a monetary system:
   \item Policy uncertainty (confiscation risk, paper-to-physical ratio,
         export controls): $\mathcal{H}_{\mathrm{Gold}} \approx 10$ bits.
   \item Coordination capacity ratio:
-        $\kappa_{\mathrm{Gold}} \approx 10^{18}$--$10^{19}$.
+        $\Ainv_{\mathrm{Gold}} \approx 10^{18}$--$10^{19}$.
 \end{itemize}
 \end{example}
 
 \begin{example}[Fiat Currency (USD)]
-\label{ex:kappa-usd}
+\label{ex:Ainv-usd}
 For the US dollar:
 \begin{itemize}
   \item No thermodynamic anchoring of the ledger (database entries,
@@ -530,7 +530,7 @@ For the US dollar:
         targets adjustable, fiscal policy volatile, CBDC transition):
         $\mathcal{H}_{\mathrm{USD}} \approx 20$ bits.
   \item Coordination capacity ratio:
-        $\kappa_{\mathrm{USD}} \approx 0$.
+        $\Ainv_{\mathrm{USD}} \approx 0$.
 \end{itemize}
 \end{example}
 
@@ -538,20 +538,20 @@ For the US dollar:
 \label{cor:hierarchy}
 Under the above estimates:
 \[
-\kappa_{\mathrm{BTC}}
+\Ainv_{\mathrm{BTC}}
 \;\gg\;
-\kappa_{\mathrm{Gold}}
+\Ainv_{\mathrm{Gold}}
 \;\gg\;
-\kappa_{\mathrm{USD}}.
+\Ainv_{\mathrm{USD}}.
 \]
 Quantitatively:
 \begin{align*}
-\kappa_{\mathrm{BTC}} / \kappa_{\mathrm{Gold}}
+\Ainv_{\mathrm{BTC}} / \Ainv_{\mathrm{Gold}}
   &\approx 10^{20}, \\
-\kappa_{\mathrm{Gold}} / \kappa_{\mathrm{USD}}
+\Ainv_{\mathrm{Gold}} / \Ainv_{\mathrm{USD}}
   &\approx 10^{18}\text{--}10^{19}.
 \end{align*}
-The ratio $\kappa_{\mathrm{BTC}} / \kappa_{\mathrm{Gold}} \approx 10^{20}$
+The ratio $\Ainv_{\mathrm{BTC}} / \Ainv_{\mathrm{Gold}} \approx 10^{20}$
 suggests Bitcoin represents a \emph{qualitative phase transition} in
 coordination capacity, not merely an incremental improvement over
 prior monetary technologies.
@@ -560,7 +560,7 @@ prior monetary technologies.
 
 \subsubsection{Relation to Prior Definitions}
 
-The coordination capacity ratio $\kappa$ complements the earlier
+The coordination capacity ratio $\Ainv$ complements the earlier
 definitions in this section:
 
 \begin{itemize}
@@ -568,7 +568,7 @@ definitions in this section:
         measures joules per unit transferred---a flow quantity.
   \item \textbf{Security exponent} $\beta$ (Definition 4.X) measures
         the exponential decay rate of reorganization probability.
-  \item \textbf{Coordination capacity ratio} $\kappa$ measures the
+  \item \textbf{Coordination capacity ratio} $\Ainv$ measures the
         ratio of cumulative thermodynamic depth to monetary uncertainty---a
         stock quantity capturing the system's attractiveness as a
         coordination substrate.
@@ -577,13 +577,13 @@ definitions in this section:
 These quantities are related: high $\rho_{\irr}$ contributes to high
 $\mathcal{S}$ (cumulative irreversibility), while protocol ossification
 contributes to low $\mathcal{H}$ (monetary predictability). Together,
-they determine $\kappa$.
+they determine $\Ainv$.
 
-\begin{remark}[Why $\kappa$ Matters]
+\begin{remark}[Why $\Ainv$ Matters]
 While $C_{\mathrm{coord}}$, $\rho_{\irr}$, and $\beta$ characterize
 the \emph{operational} properties of a protocol (capacity, density,
-security), $\kappa$ characterizes its \emph{attractiveness} as a
+security), $\Ainv$ characterizes its \emph{attractiveness} as a
 coordination substrate. The Capital Flow Conjecture (Conjecture
-\ref{conj:capital-flow}) posits that $\kappa$ determines long-run
+\ref{conj:capital-flow}) posits that $\Ainv$ determines long-run
 capital allocation across competing monetary systems.
 \end{remark}
