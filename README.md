@@ -1,15 +1,15 @@
 # U₁ Conjecture — The Thermodynamic Theory of Monetary Selection
 
-## Core Result: κ = 𝒮/ℋ
+## Core Result: Α = 𝒮/ℋ
 
 This repository develops the **coordination capacity ratio**, a dimensionless measure that captures the fundamental tension in monetary systems:
 
-$$\kappa = \frac{\mathcal{S}}{\mathcal{H}} = \frac{\text{Irreversibility}}{\text{Uncertainty}} = \frac{\text{What cannot be undone}}{\text{What cannot be known}}$$
+$$\Alpha = \frac{\mathcal{S}}{\mathcal{H}} = \frac{\text{Irreversibility}}{\text{Uncertainty}} = \frac{\text{What cannot be undone}}{\text{What cannot be known}}$$
 
 where:
 - **𝒮** = Thermodynamic irreversibility (Landauer-normalized cumulative energy, in bits)
 - **ℋ** = Monetary informational entropy (Shannon uncertainty about future state, in bits)
-- **κ** = Coordination capacity ratio (dimensionless)
+- **Α** = Coordination capacity ratio (dimensionless)
 
 ---
 
@@ -25,16 +25,16 @@ Every monetary system requires assumptions for database integrity. Different sys
 | **Gold** | Physical possession secure, no confiscation, assay accurate, no rehypothecation... |
 | **Bitcoin** | Math works. Physics works. |
 
-**κ = S/H measures the assumption burden:**
+**Α = S/H measures the assumption burden:**
 - High S → Security from physics, not promises
 - Low H → Few assumptions about future behavior
-- High κ → Minimal assumptions required
+- High Α → Minimal assumptions required
 
 ---
 
 ## Quantitative Estimates (2025)
 
-| Monetary System | 𝒮 (bits) | ℋ (bits) | κ | Notes |
+| Monetary System | 𝒮 (bits) | ℋ (bits) | Α | Notes |
 |-----------------|----------|----------|---|-------|
 | **Bitcoin** | 10³⁹ | ~1 | **10³⁹** | S → ∞, H → 0 |
 | **Gold** | 10¹⁹ | ~10 | 10¹⁸ | S bounded, H irreducible |
@@ -43,22 +43,22 @@ Every monetary system requires assumptions for database integrity. Different sys
 | **US Dollar** | 10⁸ | ~20 | 10⁶ | Post-1971 collapse |
 | **Euro** | 10⁸ | ~22 | 10⁵ | Fragmentation premium |
 
-**Key ratio:** κ_BTC / κ_Gold ≈ 10²¹ — a qualitative phase transition, not incremental improvement.
+**Key ratio:** Α_BTC / Α_Gold ≈ 10²¹ — a qualitative phase transition, not incremental improvement.
 
 ---
 
 ## Capital Flow Conjecture
 
-Capital flows from low-κ to high-κ systems at rate proportional to the gradient:
+Capital flows from low-Α to high-Α systems at rate proportional to the gradient:
 
-$$\dot{K}_{A \to B} \propto (\kappa_B - \kappa_A) \cdot K_A$$
+$$\dot{K}_{A \to B} \propto (\Alpha_B - \Alpha_A) \cdot K_A$$
 
 Analogous to:
 - Heat flow down temperature gradients (thermodynamics)
 - Mass flow down gravitational potentials (mechanics)
 - Current flow down voltage differentials (electromagnetism)
 
-**Historical validation:** Every voluntary monetary transition in 10,000 years of history is from lower κ to higher κ. Every forced transition (debasement, fiat) eventually reverses.
+**Historical validation:** Every voluntary monetary transition in 10,000 years of history is from lower Α to higher Α. Every forced transition (debasement, fiat) eventually reverses.
 
 ---
 
@@ -83,12 +83,12 @@ The framework derives from four axioms defining trustless coordination:
 1. A₁ → S > 0 (energy expenditure creates irreversibility)
 2. A₄ → H bounded (deterministic supply eliminates monetary uncertainty)
 3. High S → H → 0 (thermodynamic cost of forks → protocol ossification)
-4. Therefore: A₁–A₄ → κ maximized
-5. **Nakamoto consensus emerges as the κ-maximizing protocol**
+4. Therefore: A₁–A₄ → Α maximized
+5. **Nakamoto consensus emerges as the Α-maximizing protocol**
 
 ---
 
-## Why Bitcoin's κ → ∞
+### Why Bitcoin's Α → ∞
 
 Bitcoin uniquely achieves:
 - **S → ∞:** Cumulative proof-of-work grows every block, monotonically
@@ -99,7 +99,7 @@ No other system has both properties:
 - Fiat: S ≈ 0 (no thermodynamic anchor), H → ∞ (policy discretion)
 - PoS: S ≈ 0 (no energy expenditure), H > 0 (governance)
 
-**Bitcoin is the κ-singularity.**
+**Bitcoin is the Α-singularity.**
 
 ---
 
@@ -122,7 +122,7 @@ u1_conjecture/
 │   └── coordination-capacity/
 │       ├── v0.1/               # Initial C_coord definition
 │       ├── v0.2/               # Extended framework
-│       └── v0.3/               # κ = S/H (current)
+│       └── v0.3/               # Α = S/H (current)
 ├── build/
 │   └── main.pdf                # Compiled paper
 └── refs.bib
@@ -137,7 +137,7 @@ This work is timestamped to the Bitcoin blockchain via OpenTimestamps:
 | Version | Content | Block | Date |
 |---------|---------|-------|------|
 | Axioms A₁–A₄ | Core definitions | 921,080 | Oct 2025 |
-| κ = S/H (v0.3) | Coordination capacity ratio | **927,391** | Dec 2025 |
+| Α = S/H (v0.3) | Coordination capacity ratio | **927,391** | Dec 2025 |
 
 Digest (v0.3): `6859efcb4fb387985ad184ff27dfa8088c55afc8b21cd618ff0a42d85dfd29c2`
 
@@ -149,23 +149,23 @@ Digest (v0.3): `6859efcb4fb387985ad184ff27dfa8088c55afc8b21cd618ff0a42d85dfd29c2
 
 ### Near-term (2025-2026)
 
-1. **EU/Russia asset seizure:** If EU seizes Russian central bank assets (~€300B), EUR's H increases by ~14 bits, κ drops ~4×, triggering accelerated capital flight to USD/Gold/BTC.
+1. **EU/Russia asset seizure:** If EU seizes Russian central bank assets (~€300B), EUR's H increases by ~14 bits, Α drops ~4×, triggering accelerated capital flight to USD/Gold/BTC.
 
-2. **Bitcoin vs Gold flows:** Capital flow direction = sign(κ_BTC - κ_Gold). Testable via ETF flow data.
+2. **Bitcoin vs Gold flows:** Capital flow direction = sign(Α_BTC - Α_Gold). Testable via ETF flow data.
 
 3. **Altcoin governance events:** When any altcoin implements governance changes (↑H), predict capital outflow to BTC proportional to ΔH.
 
 ### Long-term
 
-4. **Bitcoin absorbs store-of-value:** >50% of global store-of-value capital in highest-κ substrate within 50 years.
+4. **Bitcoin absorbs store-of-value:** >50% of global store-of-value capital in highest-Α substrate within 50 years.
 
-5. **No competitor can exceed Bitcoin's κ:** Would require higher S (impossible without more cumulative work) or lower H (impossible — 21M cap is already deterministic).
+5. **No competitor can exceed Bitcoin's Α:** Would require higher S (impossible without more cumulative work) or lower H (impossible — 21M cap is already deterministic).
 
 ---
 
 ## The Equation
 
-$$\boxed{\kappa = \frac{\mathcal{S}}{\mathcal{H}}}$$
+$$\boxed{\Alpha = \frac{\mathcal{S}}{\mathcal{H}}}$$
 
 **Security over uncertainty.**
 
@@ -202,7 +202,7 @@ See [LICENSE](LICENSE) for full details.
 ```bibtex
 @misc{petridis2025u1,
   author       = {Petridis, Stamatis},
-  title        = {The U₁ Conjecture: κ = S/H as the Coordination Capacity of Monetary Systems},
+  title        = {The U₁ Conjecture: Α = S/H as the Coordination Capacity of Monetary Systems},
   year         = {2025},
   howpublished = {GitHub repository},
   url          = {https://github.com/stamatis-petridis/u1_conjecture},
@@ -220,4 +220,4 @@ See [LICENSE](LICENSE) for full details.
 
 ---
 
-*"Money is just a database logging future claims. κ measures how few assumptions that database requires. Bitcoin minimizes assumptions. Therefore Bitcoin maximizes κ. Therefore capital flows to Bitcoin."*
+*"Money is just a database logging future claims. Α measures how few assumptions that database requires. Bitcoin minimizes assumptions. Therefore Bitcoin maximizes Α. Therefore capital flows to Bitcoin."*
